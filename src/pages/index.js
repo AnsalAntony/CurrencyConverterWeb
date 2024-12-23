@@ -51,6 +51,7 @@ export default function Home() {
           <input
             className={styles.formInput}
             type="number"
+            placeholder="Enter Amount"
             value={amount}
             onChange={(e) => {
               setAmount(e.target.value);
@@ -63,7 +64,7 @@ export default function Home() {
         <div className={styles.from}>
           <p className={styles.formInputLabel}>From</p>
           <div className={styles.selectBox}>
-            <img src={loadFlag(fromCurrency)} alt="flag" />
+            <img src={loadFlag(fromCurrency)} alt="from-flag" />
             <select
               value={fromCurrency}
               onChange={(e) => setFromCurrency(e.target.value)}
@@ -82,7 +83,7 @@ export default function Home() {
         <div className={styles.to}>
           <p className={styles.formInputLabel}>To</p>
           <div className={styles.selectBox}>
-            <img src={loadFlag(toCurrency)} alt="flag" />
+            <img src={loadFlag(toCurrency)} alt="to-flag" />
             <select
               value={toCurrency}
               onChange={(e) => setToCurrency(e.target.value)}
